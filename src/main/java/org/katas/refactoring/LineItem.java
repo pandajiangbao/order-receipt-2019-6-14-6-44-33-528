@@ -6,25 +6,24 @@ public class LineItem {
     private int quantity;
 
     public LineItem(String description, double price, int quantity) {
-        super();
         this.description = description;
         this.price = price;
         this.quantity = quantity;
     }
 
-    String getDescription() {
+    public String getDescription() {
         return description;
     }
 
-    double getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    int getQuantity() {
+    public int getQuantity() {
         return quantity;
     }
 
-    double totalAmount() {
+    public double totalAmount() {
         return price * quantity;
     }
 }
